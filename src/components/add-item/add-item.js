@@ -29,7 +29,7 @@ export default class AddItemForm extends Component {
             <input type="text"
                    className="form-control"
                    onChange={this.onLabelChange}
-                   placeholder="Что Вам нужно сделать?"
+                   placeholder="Что сделать?"
                    value={this.state.label}/>
                 <button className="btn btn-outline-secondary buttonAdd">
                 Добавить
