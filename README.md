@@ -1,1 +1,1 @@
-npm run build
+Ссылка на работу https://olyalyshenko.github.io/todolist/
