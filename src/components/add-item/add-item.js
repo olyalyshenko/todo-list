@@ -8,6 +8,7 @@ export default class AddItemForm extends Component {
         label: ''
     };
 
+    
     onLabelChange = (e) => {
         this.setState({
            label: e.target.value
@@ -31,7 +32,7 @@ export default class AddItemForm extends Component {
                    onChange={this.onLabelChange}
                    placeholder="Что сделать?"
                    value={this.state.label}/>
-                <button className="btn btn-outline-secondary buttonAdd">
+                <button className="btn btn-outline-dark buttonAdd">
                 Добавить
                 </button>
             </form>

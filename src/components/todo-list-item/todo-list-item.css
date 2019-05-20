@@ -1,23 +1,26 @@
 .todo-list-item {
-    font-size: 1.25rem;
+    width: 100%;
+    display: flex;
+    flex-direction: row;
+    justify-content: space-between;
+    align-items: center;
 }
 
-.todo-list-item {
-    width: 35px;
-    margin: 3px;
-}
 
 .todo-list-item button {
     width: 35px;
+    height: 35px;
     margin: 3px;
-    float: right;
+    padding: 0;
 }
 
 .todo-list-item-label {
+    font-size: 1.25rem;
     margin-left: 1.25rem;
     line-height: 35px;
     cursor: pointer;
     user-select: none;
+    word-wrap: break-word;
 }
 
 
@@ -27,5 +30,19 @@
 
 .todo-list-item.important .todo-list-item-label{
     font-weight: bold;
-    color: steelblue;
+    color: rgb(16, 105, 56);
  }
+
+ 
+@media screen and (max-width: 615px) {
+    .todo-list-item button {
+        width: 25px;
+        height: 25px;
+        margin: 3px;
+    }
+    .todo-list-item-label {
+        width: 60%;
+        line-height: 20px;
+        font-size: 1rem;
+    }
+}

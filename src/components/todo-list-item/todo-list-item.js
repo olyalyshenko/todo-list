@@ -25,18 +25,18 @@ const TodoListItem = (props) => {
                 onClick={ onToogleDone } >
                 { label }
             </span>
-            
-            <button type="button"
-                    className="btn btn-outline-success btn-sm button"
-                    onClick={onToogleImportant}>
-                    <i className="fa fa-exclamation"/>
-            </button>
-    
-            <button type="button"
-                    className="btn btn-outline-danger btn-sm button"
-                    onClick={onDeleted}>
-                    <i className="fa fa-trash-o"/>
-            </button>
+            <span class="todo-list-item-buttons">
+                <button type="button"
+                        className="btn btn-outline-success btn-sm button"
+                        onClick={onToogleDone}>
+                        <i className="fa fa-check"/>
+                </button>
+                <button type="button"
+                        className="btn btn-outline-danger btn-sm button"
+                        onClick={onDeleted}>
+                        <i className="fa fa-trash-o"/>
+                </button>
+            </span>
         </span>
         );
     };
