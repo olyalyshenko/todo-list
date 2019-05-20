@@ -1,2 +1,1 @@
-React
-Ссылка на работу https://olyalyshenko.github.io/todo-list/
+ToDoList на React - cсылка на работу https://olyalyshenko.github.io/todo-list/
